@@ -27,6 +27,6 @@ void shift(int arr[], int n)
 
 int main()
 {
-    int arr[10] = {2,4,5,7,6,6,4,3,8,9};
+    int arr[10] = {3,4,5,7,6,6,4,3,8,9};
     shift(arr,10);
 }
