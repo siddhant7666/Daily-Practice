@@ -2,18 +2,16 @@
 using namespace std;
 int main()
 {
-    int arr[][3]=
-    {
-        {2,4,6},
-        {8,3,5},
-        {7,9,1}
+    int arr[][3]={
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
     };
-
-    for(int row=0; row<3; row++)
+    for(int row =0; row<3; row++)
     {
-        for(int col=row; col<3; col++)  // FROM col = row kyuki nahi to pura wapas se 
-        {                               // normal ho jayega, so diagonal elements including aage tak swap karo.
-            swap(arr[row][col],arr[col][row]);
+        for(int col =row; col<3; col++)
+        {
+           swap(arr[row][col],arr[col][row]); 
         }
     }
 
@@ -21,7 +19,7 @@ int main()
     {
         for(int col=0; col<3; col++)
         {
-            cout<<" "<<arr[row][col]<<" ";
+            cout<<arr[row][col]<<" ";
         }
         cout<<endl;
     }
