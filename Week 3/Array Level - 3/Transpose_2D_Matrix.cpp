@@ -22,5 +22,5 @@ int main()
             cout<<arr[row][col]<<" ";
         }
         cout<<endl;
-    }
+     }
 }
