@@ -5,6 +5,7 @@ int main()
     int n;
     cin>>n;
     int* arr = new int[n];
+    int* arr2 = new int[n];
     for(int i=0; i<n; i++)
     {
         cin>>arr[i];
@@ -15,14 +16,18 @@ int main()
 
     while(start<=end)
     {
-        swap(arr[start],arr[end]);
+        if(start==end)
+        cout<<arr[end];
+        else
+        {
+        cout<<arr[start]<<" "<<arr[end]<<" ";
+        
+        }
         start++;
         end--;
+        
     }
 
-    for(int j=0; j<n; j++)
-    {
-        cout<<arr[j]<<" ";
-    }
+    
 
 }
