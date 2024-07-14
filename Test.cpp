@@ -1,24 +1,40 @@
 #include<iostream>
+#include<climits>
 using namespace std;
 int main()
 {
     int n;
+    cout<<"Enter the size of array: ";
     cin>>n;
+    //dynamically creating the array
 
-    int arr[n]={1,0,0,0,1,0,1,0,1,0,0,0,1,1,2,3,4,5,0,1,0};
-    int zero_count=0;
-    int one_count=0;
-    for(int i=0; i<n;i++)
+    int* arr = new int[n];
+    cout<<"Enter the values of array: ";
+    for(int i=0; i<n; i++)
     {
-        if(arr[i]==0)
-        zero_count++;
-        else if(arr[i]==1)
-        one_count++;
+        
+        cin>>arr[i];
+        
     }
 
-    cout<<"The number of zeroes in this program is: "<<zero_count;
+    // solving the problem:
+
+    int min = INT_MAX;
+    int max = INT_MIN;
+
+    for(int j=0; j<n; j++)
+    {
+        if(arr[j]> max)
+        max = arr[j];
+
+        else if(arr[j]<min)
+        min = arr[j];
+    }
+
+    cout<<"Maximum value in this array is: "<<max;
     cout<<endl;
-    cout<<"The number of ones in this program is: "<<one_count;
+    cout<<"Minimum value in this array is: "<<min;
 
-
+    delete[] arr;
+    return 0;
 }
