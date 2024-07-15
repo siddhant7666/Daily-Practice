@@ -80,20 +80,56 @@
 // }
 
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int arr[3]={10,20,30};
-    for(int i=0; i<3; i++)
-    {
-        for(int j=0; j<3; j++)
-        {
-            for(int k=0; k<3; k++)
-            {
-                cout<<"["<<" "<<arr[i]<<","<<arr[j]<<","<<arr[k]<<" "<<"]";
-            }
-            cout<<endl;
-        }
-    }
-}
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[3]={10,20,30};
+//     for(int i=0; i<3; i++)
+//     {
+//         for(int j=0; j<3; j++)
+//         {
+//             for(int k=0; k<3; k++)
+//             {
+//                 cout<<"["<<" "<<arr[i]<<","<<arr[j]<<","<<arr[k]<<" "<<"]";
+//             }
+//             cout<<endl;
+//         }
+//     }
+// }
+
+//SORT 0s and 1s
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[5]={1,1,1,0,0};
+//     int start=0;
+//     int end = 4;
+//     while(start<end)
+//     {
+//         while(arr[start]==0&&start<end)
+//         {
+//             start++;
+//         }
+//         while(arr[end]==1&&start<end)
+//         {
+//             end--;
+//         }
+//         if(start<end)
+//         {
+//             swap(arr[start],arr[end]);
+//             start++;
+//             end--;
+//         }
+
+
+//     }
+
+//     for(int i=0; i<5; i++)
+//     {
+//         cout<<arr[i]<<" ";
+
+//     }
+// }
