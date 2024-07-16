@@ -250,3 +250,55 @@
 //         cout<<endl;
 //     }
 // }
+
+
+//Taking input in 2d array:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int row, col;
+    cout<<"Enter the no. of rows: ";
+    cin>>row;
+    cout<<"Enter the no. of columns: ";
+    cin>>col;
+
+    // dynamically allocating 2d array
+
+    int** arr = new int*[row];
+    for(int i=0; i<row; i++)
+    {
+        arr[i]=new int[col];
+    }
+
+    // vector<vector<int>> arr(row, vector<int>(col)); WE CAN USE VECTOR AS WELL FOR CREATING ARRAY DYNAMICALLY
+
+
+
+    // int arr[row][col]; 
+    //not  recommended as its a variable length array and some compilers might not support and code might not be portable across platfroms. also large arrays can lead to stack overflow, better use VECTORS OR DYNAMICALLY CREATED ARRAYS.
+
+    cout<<"Enter the elements of 2d array: ";
+
+    for(int i=0; i<row; i++)
+    {
+        for(int j=0; j<col; j++)
+        {
+            cin>>arr[i][j];
+        }
+    }  
+
+    cout<<"Printing the elements "<<endl;
+
+    for(int i=0; i<row; i++)
+    {
+        for(int j=0; j<col; j++)
+        {
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }  
+
+
+}
