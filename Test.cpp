@@ -199,3 +199,20 @@
 //         cout<<arr[i]<<" ";
 //     }
 // }
+
+// 2D ARRAY TEST - PRACTICE
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr2[5][10];
+    int arr[2][4]={
+        {1,2,3,4},
+        {5,6,7,8}
+    };
+
+    cout<<arr[1][3];
+    
+
+}
