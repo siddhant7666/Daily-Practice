@@ -202,19 +202,51 @@
 
 // 2D ARRAY TEST - PRACTICE
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int arr2[5][10];
-    int arr[2][4]={
-        {1,2,3,4},
-        {5,6,7,8}
-    };
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr2[5][10];
+//     int arr[2][4]={
+//         {1,2,3,4},
+//         {5,6,7,8}
+//     };
 
-    // cout<<arr[1][3];
+//     // cout<<arr[1][3];
 
+//     for(int i=0; i<2; i++)
+//     {
+//         for(int j=0; j<4; j++)
+//         {
+//             cout<<arr[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }
     
-    
 
-}
+// }
+
+
+// PRINTING 2D ARRAY COLUMNWISE:
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[2][4]={
+//         {1,2,3,4},
+//         {5,6,7,8}
+//     };
+
+//     cout<<"Priniting the array columnwise"<<endl;
+
+//     for(int col=0; col<4; col++)
+//     {
+//         for(int row=0; row<2; row++)
+//         {
+//             cout<<arr[row][col]<<" ";
+
+//         }
+//         cout<<endl;
+//     }
+// }
