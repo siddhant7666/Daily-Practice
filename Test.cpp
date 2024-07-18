@@ -254,51 +254,114 @@
 
 //Taking input in 2d array:
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int row, col;
-    cout<<"Enter the no. of rows: ";
-    cin>>row;
-    cout<<"Enter the no. of columns: ";
-    cin>>col;
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int row, col;
+//     cout<<"Enter the no. of rows: ";
+//     cin>>row;
+//     cout<<"Enter the no. of columns: ";
+//     cin>>col;
 
-    // dynamically allocating 2d array
+//     // dynamically allocating 2d array
 
-    int** arr = new int*[row];
-    for(int i=0; i<row; i++)
-    {
-        arr[i]=new int[col];
-    }
+//     int** arr = new int*[row];
+//     for(int i=0; i<row; i++)
+//     {
+//         arr[i]=new int[col];
+//     }
 
-    // vector<vector<int>> arr(row, vector<int>(col)); WE CAN USE VECTOR AS WELL FOR CREATING ARRAY DYNAMICALLY
-
-
-
-    // int arr[row][col]; 
-    //not  recommended as its a variable length array and some compilers might not support and code might not be portable across platfroms. also large arrays can lead to stack overflow, better use VECTORS OR DYNAMICALLY CREATED ARRAYS.
-
-    cout<<"Enter the elements of 2d array: ";
-
-    for(int i=0; i<row; i++)
-    {
-        for(int j=0; j<col; j++)
-        {
-            cin>>arr[i][j];
-        }
-    }  
-
-    cout<<"Printing the elements "<<endl;
-
-    for(int i=0; i<row; i++)
-    {
-        for(int j=0; j<col; j++)
-        {
-            cout<<arr[i][j]<<" ";
-        }
-        cout<<endl;
-    }  
+//     // vector<vector<int>> arr(row, vector<int>(col)); WE CAN USE VECTOR AS WELL FOR CREATING ARRAY DYNAMICALLY
 
 
-}
+
+//     // int arr[row][col]; 
+//     //not  recommended as its a variable length array and some compilers might not support and code might not be portable across platfroms. also large arrays can lead to stack overflow, better use VECTORS OR DYNAMICALLY CREATED ARRAYS.
+
+//     cout<<"Enter the elements of 2d array: ";
+
+//     for(int i=0; i<row; i++)
+//     {
+//         for(int j=0; j<col; j++)
+//         {
+//             cin>>arr[i][j];
+//         }
+//     }  
+
+//     cout<<"Printing the elements "<<endl;
+
+//     for(int i=0; i<row; i++)
+//     {
+//         for(int j=0; j<col; j++)
+//         {
+//             cout<<arr[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }  
+
+
+// }
+
+// LINEAR SEARCH IN A 2D ARRAY:
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int row;
+//     int col;
+//     cout<<"Enter row: ";
+//     cin>>row;
+//     cout<<"Enter column: ";
+//     cin>>col;
+
+//     int** arr = new int*[row];
+//     for(int i=0; i<row; i++)
+//     {
+//         arr[row]=new int[col];
+//     } 
+
+//     cout<<"Enter the array's elements: ";
+
+//     for(int i=0; i<row; i++)
+//     {
+//         for(int j=0; j<col; j++)
+//         {
+//             cin>>arr[i][j];
+//         }
+//     }
+
+//     cout<<"Enter which number do you want to search in this array: ";
+//     int temp;
+//     cin>>temp;
+
+//     bool ans = false;
+
+//     for(int i=0; i<row; i++)
+//     {
+        
+//         for(int j=0; j<col; j++)
+//         {
+//             if(arr[i][j]==temp){
+//                 ans= true;
+//                 break;
+//             }
+//         }
+//         if(ans)
+//         {
+//             cout<<"Element found successfully.";
+//             break;
+            
+//         }
+
+//     }
+
+//     if(!ans)
+//     {
+//         cout<<"Element not found, unfortunately.";
+//     }
+
+//     return 0;
+
+// }
