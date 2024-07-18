@@ -430,3 +430,27 @@
 //     }
 //     cout<<"Column-wise sum is: "<<col_sum;
 // }
+
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[3][3]={
+//         {1,2,3},
+//         {2,3,4},
+//         {3,4,5}
+//     };
+//     int principal_diagonal_sum =0;
+
+//     for(int row = 0; row<3; row++)
+//     {
+//         for(int col = 0; col<3; col++)
+//         {
+//             if(row==col)
+//             principal_diagonal_sum+=arr[row][col];
+//         }
+//     }
+
+//     cout<<"Sum of principal diagonal sum is: "<<principal_diagonal_sum;
+// }
