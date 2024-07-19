@@ -524,32 +524,27 @@
 //     return 0;
 // }
 
+//MOVING ALL NEGATIVE NUMBERS TO THE LEFT
 #include<iostream>
 using namespace std;
 int main()
 {
-    int arr[6] ={12,10,-2,-33,24,-5};
-    int index=0;
-    int left=0;
-
+    int arr[6]={-2,0,3,-4,2, -6};
+    int index =0;
+    int left =0;
     while(index<6)
     {
-        if(arr[index]>0)
+        if(arr[index]<0)
         {
-            index++;
-        }
-        else
-        {
-            swap(arr[index],arr[left]);
+            swap(arr[left],arr[index]);
             left++;
-            index++;
         }
-
+        index++;
+        
     }
-
-    for(int i=0; i<6; i++)
-    {
-        cout<<" "<< arr[i]<<" ";
-    }
-
+    cout<<"Printing the elements: ";
+        for(int i=0; i<6; i++)
+        {
+            cout<<arr[i]<<" ";
+        }
 }
