@@ -525,26 +525,68 @@
 // }
 
 //MOVING ALL NEGATIVE NUMBERS TO THE LEFT
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[6]={-2,0,3,-4,2, -6};
+//     int index =0;
+//     int left =0;
+//     while(index<6)
+//     {
+//         if(arr[index]<0)
+//         {
+//             swap(arr[left],arr[index]);
+//             left++;
+//         }
+//         index++;
+        
+//     }
+//     cout<<"Printing the elements: ";
+//         for(int i=0; i<6; i++)
+//         {
+//             cout<<arr[i]<<" ";
+//         }
+// }
+
+
+
+#include<bits/stdc++.h>
 using namespace std;
+
+
 int main()
 {
-    int arr[6]={-2,0,3,-4,2, -6};
-    int index =0;
-    int left =0;
-    while(index<6)
+
+    
+vector<int>arr{-2,0,1,-3,4,-2};
+
+int left =0;
+int indices =0;
+
+while(indices<6)
+{
+    if(arr[indices]<0)
     {
-        if(arr[index]<0)
-        {
-            swap(arr[left],arr[index]);
-            left++;
-        }
-        index++;
-        
+        swap(arr[left],arr[indices]);
+        left++;
+
     }
-    cout<<"Printing the elements: ";
-        for(int i=0; i<6; i++)
-        {
-            cout<<arr[i]<<" ";
-        }
+    indices++;
+}
+
+cout<<"OUTPUT ARRAY: "<<endl;
+
+for(int i=0; i<6; i++)
+{
+    cout<<arr[i]<<" ";
+
+}
+
+
+ 
+
+
+
+
 }
