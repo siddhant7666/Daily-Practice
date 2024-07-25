@@ -654,35 +654,72 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[5]={1,3,3,3,5};
+
+//     int n = 5;
+
+//     int i = 0;
+//     while(i<n)
+//     {
+//         int index = arr[i]-1;
+//         if(arr[i]!=arr[index])
+//         {
+//             swap(arr[i],arr[index]);
+//         }
+//         else
+//         {
+//             i++;
+//         }
+//     }
+
+    
+
+//     for(int i=0; i<5; i++)
+//     {
+//         if(arr[i]!=i+1)
+//         {
+//             cout<<i+1<<" ";
+//         }
+//     }
+// }
+
+
 #include<iostream>
 using namespace std;
 int main()
 {
-    int arr[5]={1,3,3,3,5};
+    int arr[8] = {10,20,30,30,30,40,50,50};
+    int target = 50;
+    int n = 8;
 
-    int n = 5;
+    int start =0;
+    int end =n-1;
+    int mid = start+(end-start)/2;
 
-    int i = 0;
-    while(i<n)
+    int ind = -1;
+
+    while(start<=end)
     {
-        int index = arr[i]-1;
-        if(arr[i]!=arr[index])
+        mid = start + (end-start)/2;
+        if(arr[mid]==target)
         {
-            swap(arr[i],arr[index]);
+            ind = mid;
+            end = mid-1;
+
+        }
+        else if(arr[mid]>target)
+        {
+            end = mid-1;
         }
         else
         {
-            i++;
+            start = mid+1;
         }
-    }
 
-    
-
-    for(int i=0; i<5; i++)
-    {
-        if(arr[i]!=i+1)
-        {
-            cout<<i+1<<" ";
-        }
     }
+    cout<<"Index is: "<< mid;
 }
