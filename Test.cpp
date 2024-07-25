@@ -594,61 +594,95 @@
 
 // BINARY SEARCH 
 
-#include<iostream>
-#include<vector>
-using namespace std;
+// #include<iostream>
+// #include<vector>
+// using namespace std;
 
-int binarySearch(vector<int>&arr, int n, int target)
-    {
-        int start =0;
-        int end = n-1;
+// int binarySearch(vector<int>&arr, int n, int target)
+//     {
+//         int start =0;
+//         int end = n-1;
 
-        int mid = start+(end-start)/2;
+//         int mid = start+(end-start)/2;
 
-        while(start<=end)
-        {
-            if(arr[mid]==target)
-            {
-                return mid;
-            }
+//         while(start<=end)
+//         {
+//             if(arr[mid]==target)
+//             {
+//                 return mid;
+//             }
 
-            else if(arr[mid]>target)
-            {
-                end = mid-1;
-            }
-            else
-            {
-                start=mid+1;
-            }
+//             else if(arr[mid]>target)
+//             {
+//                 end = mid-1;
+//             }
+//             else
+//             {
+//                 start=mid+1;
+//             }
 
-            mid = start+(end-start)/2;
-        }
+//             mid = start+(end-start)/2;
+//         }
 
-        return -1;
+//         return -1;
 
-    }
+//     }
 
 
 
-int main()
-{
-    vector<int>arr{10,20,20,40,50,60,70,80,90};
-    int target = 700;
-    int n = 9;
+// int main()
+// {
+//     vector<int>arr{10,20,20,40,50,60,70,80,90};
+//     int target = 700;
+//     int n = 9;
 
-    int ans = binarySearch(arr, n, target);
+//     int ans = binarySearch(arr, n, target);
 
-    if(ans==-1)
-    {
-        cout<<"Element not found"<<endl;
-    }
-    else
-    {
-        cout<<"Element found at index: "<<ans<<endl;
-    }
+//     if(ans==-1)
+//     {
+//         cout<<"Element not found"<<endl;
+//     }
+//     else
+//     {
+//         cout<<"Element found at index: "<<ans<<endl;
+//     }
 
     
 
 
 
+// }
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[5]={1,3,3,3,5};
+
+    int n = 5;
+
+    int i = 0;
+    while(i<n)
+    {
+        int index = arr[i]-1;
+        if(arr[i]!=arr[index])
+        {
+            swap(arr[i],arr[index]);
+        }
+        else
+        {
+            i++;
+        }
+    }
+
+    
+
+    for(int i=0; i<5; i++)
+    {
+        if(arr[i]!=i+1)
+        {
+            cout<<i+1<<" ";
+        }
+    }
 }
