@@ -688,38 +688,78 @@
 // }
 
 
-#include<iostream>
-using namespace std;
-int main()
-{
-    int arr[8] = {10,20,30,30,30,40,50,50};
-    int target = 50;
-    int n = 8;
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[8] = {10,20,30,30,30,40,50,50};
+//     int target = 50;
+//     int n = 8;
 
-    int start =0;
-    int end =n-1;
-    int mid = start+(end-start)/2;
+//     int start =0;
+//     int end =n-1;
+//     int mid = start+(end-start)/2;
 
-    int ind = -1;
+//     int ind = -1;
 
-    while(start<=end)
-    {
-        mid = start + (end-start)/2;
-        if(arr[mid]==target)
-        {
-            ind = mid;
-            end = mid-1;
+//     while(start<=end)
+//     {
+//         mid = start + (end-start)/2;
+//         if(arr[mid]==target)
+//         {
+//             ind = mid;
+//             end = mid-1;
 
-        }
-        else if(arr[mid]>target)
-        {
-            end = mid-1;
-        }
-        else
-        {
-            start = mid+1;
-        }
+//         }
+//         else if(arr[mid]>target)
+//         {
+//             end = mid-1;
+//         }
+//         else
+//         {
+//             start = mid+1;
+//         }
 
-    }
-    cout<<"Index is: "<< mid;
-}
+//     }
+//     cout<<"Index is: "<< mid;
+// }
+
+// MISSING ELEMENT IN A SORTED ARRAY BY BINARY SEARCH
+
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[] = {1,2,4,5,6,7,8};
+//     int n =7;
+
+//     int start =0;
+//     int end = 6;
+//     int mid = start+(end-start)/2;
+//     int ans = -1;
+
+//     while(start<=end)
+//     {
+//         mid = start+(end-start)/2;
+//         int diff = arr[mid]-mid;
+//         if(diff!=1)
+//         {
+//             ans = mid;
+//             end = mid-1;
+//         }
+//         else
+//         {
+//             start = mid+1;
+//         }
+//     }
+
+//     if(ans!=-1)
+//     {
+//         cout<< ans+1;
+//     }
+//     else
+//     {
+//         cout<< n+1;
+//     }
+
+// }
