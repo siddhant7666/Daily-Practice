@@ -770,6 +770,25 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void wave_print(int arr[3][4])
+{
+    for(int col =0; col<4; col++)
+    {
+        for(int row =0; row<3; row++)
+        {
+            if(col%2==0)
+            {
+                cout<<arr[row][col]<<" ";
+            }
+            else
+            {
+                cout<<arr[2-row][col]<<" ";
+            }
+        }
+    }
+
+}
+
 
 
 
@@ -782,7 +801,7 @@ int main()
         {9,10,11,12}
     };
 
-    
+    wave_print(arr);
     
 
 }
