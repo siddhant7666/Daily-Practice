@@ -767,41 +767,164 @@
 // WAVE PRINT A MATRIX
 
 
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
-void wave_print(int arr[3][4])
-{
-    for(int col =0; col<4; col++)
-    {
-        for(int row =0; row<3; row++)
-        {
-            if(col%2==0)
-            {
-                cout<<arr[row][col]<<" ";
-            }
-            else
-            {
-                cout<<arr[2-row][col]<<" ";
-            }
-        }
-    }
+// void wave_print(int arr[3][4])
+// {
+//     for(int col =0; col<4; col++)
+//     {
+//         for(int row =0; row<3; row++)
+//         {
+//             if(col%2==0)
+//             {
+//                 cout<<arr[row][col]<<" ";
+//             }
+//             else
+//             {
+//                 cout<<arr[2-row][col]<<" ";
+//             }
+//         }
+//     }
 
-}
-
-
+// }
 
 
 
-int main()
-{
-    int arr[3][4] ={
-        {1,2,3,4},
-        {5,6,7,8},
-        {9,10,11,12}
-    };
 
-    wave_print(arr);
+
+// int main()
+// {
+//     int arr[3][4] ={
+//         {1,2,3,4},
+//         {5,6,7,8},
+//         {9,10,11,12}
+//     };
+
+//     wave_print(arr);
     
 
-}
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int a = 3;
+//     int b = 4;
+
+//     // a = 4
+//     // b = 3
+
+//     // METHOD 1 -> using temp variable 
+
+//     cout<<"Before Conversion"<<endl;
+
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
+
+//     int temp; 
+
+//     temp = a;
+//     a = b;
+//     b= temp;
+
+//     cout<<"After Conversion"<<endl;
+
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
+
+// }
+
+
+// METHOD 2 -> USING ARITHMETIC OPERATION
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int a = 3;
+//     int b = 4;
+
+//     // a = 4  // TARGET
+//     // b = 3
+
+    
+
+//     cout<<"Before Conversion"<<endl;
+
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
+
+//     a = a+b;  // 7
+//     b = a-b;  // 7-4 = 3
+//     a = a-b;  // 7-3 = 4
+
+
+
+    
+
+
+//     cout<<"After Conversion"<<endl;
+
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
+
+// }
+
+
+// METHOD 3 -> USING INBUILT SWAP FUNCTION 
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int a = 3;
+//     int b = 4;
+
+//     cout<<"Before Conversion"<<endl;
+
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
+
+//     //swap(x,y)
+
+//     swap(a,b);
+
+//     cout<<"After Conversion"<<endl;
+
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
+
+// }
+
+
+// METHOD 4 : USING XOR 
+
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int a = 3;
+//     int b = 4;
+
+//     cout<<"Before Conversion"<<endl;
+
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
+
+//     a = a^b;  // a = 3^4
+//     b = a^b; // b = a^b = 3^4^4 = 3 
+//     a = a^b; // a = a^b = 3^4^3 = 4
+
+//     cout<<"After Conversion"<<endl;
+
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
+
+// }
