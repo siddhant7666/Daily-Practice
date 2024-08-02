@@ -930,20 +930,20 @@
 // }
 
 // CP INTERFACE
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
-void solve()
-{
+// void solve()
+// {
 
-}
+// }
 
-int main()
-{
-    int t;
-    cin>>t; 
-    while(t--)
-    {
-        solve();
-    }
-}
+// int main()
+// {
+//     int t;
+//     cin>>t; 
+//     while(t--)
+//     {
+//         solve();
+//     }
+// }
