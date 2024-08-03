@@ -903,31 +903,31 @@
 // }
 
 
-METHOD 4 : USING XOR 
+// METHOD 4 : USING XOR 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main()
-{
-    int a = 3;
-    int b = 4;
+// int main()
+// {
+//     int a = 3;
+//     int b = 4;
 
-    cout<<"Before Conversion"<<endl;
+//     cout<<"Before Conversion"<<endl;
 
-    cout<<"Value of a is: "<<a<<endl;
-    cout<<"Value of b is: "<<b<<endl;
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
 
-    a = a^b;  // a = 3^4
-    b = a^b; // b = a^b = 3^4^4 = 3 
-    a = a^b; // a = a^b = 3^4^3 = 4
+//     a = a^b;  // a = 3^4
+//     b = a^b; // b = a^b = 3^4^4 = 3 
+//     a = a^b; // a = a^b = 3^4^3 = 4
 
-    cout<<"After Conversion"<<endl;
+//     cout<<"After Conversion"<<endl;
 
-    cout<<"Value of a is: "<<a<<endl;
-    cout<<"Value of b is: "<<b<<endl;
+//     cout<<"Value of a is: "<<a<<endl;
+//     cout<<"Value of b is: "<<b<<endl;
 
-}
+// }
 
 // CP INTERFACE
 // #include<bits/stdc++.h>
