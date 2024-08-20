@@ -953,39 +953,118 @@
 
 // OOPS PRACTICE 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-class student
-{
-    public:
-    int id;
-    string name;
-    int roll;
-    void setname(string s)
-    {
-        name = s;
-    }
+// class student
+// {
+//     public:
+//     int id;
+//     string name;
+//     int roll;
+//     void setname(string s)
+//     {
+//         name = s;
+//     }
 
-};
+// };
 
-int main()
-{
-    student s1;
-    s1.id = 1;
-    s1.name = "Sidd";
-    s1.roll = 3;
-    s1.setname("Palak");
+// int main()
+// {
+//     student s1;
+//     s1.id = 1;
+//     s1.name = "Sidd";
+//     s1.roll = 3;
+//     s1.setname("Palak");
 
     
 
 
-    cout<<s1.id<<endl<<s1.name<<endl<<s1.roll<<endl;
+//     cout<<s1.id<<endl<<s1.name<<endl<<s1.roll<<endl;
 
 
-}
+// }
 
 
-// SETTER AND GETTER FUNCTION 
+// GETTER AND SETTER FUNCTION 
+
+// #include<iostream>
+// using namespace std;
+
+// class Student
+// {
+//     private:
+//     string name;
+//     int roll;
+//     int age;
+
+//     public:
+//     void setname(string s)
+//     {
+//         name = s;
+//     }
+
+//     void setroll(int num)
+//     {
+        
+//         roll = num;
+//     }
+
+//     void setage(int date)
+//     {
+//         age = date;
+//     }
+
+
+//     void getname()
+//     {
+//         cout<<name<<endl;
+//     }
+
+//     int getage(int pin)
+//     {
+//         if(pin == 123)
+//         {
+//             return age;
+            
+//         }
+//         else
+//         {
+//             cout<<"False PIN"<<endl;
+//             return 0;
+//         }
+        
+        
+//     }
+
+//     void getroll()
+//     {
+        
+//         cout<<roll<<endl;
+//     }
+
+
+
+// };
+
+
+// int main()
+// {
+//     Student s1;
+
+//     s1.setname("Siddhant");
+//     s1.setage(18);
+//     s1.setroll(3);
+
+//     s1.getname();
+//     int ans = s1.getage(133);
+//     cout<<ans<<endl;
+//     s1.getroll();
+
+
+
+// }
+
+
 
 
