@@ -949,25 +949,43 @@
 // }
 
 
-#include<bits/stdc++.h>
+
+
+// OOPS PRACTICE 
+
+#include<iostream>
 using namespace std;
+
+class student
+{
+    public:
+    int id;
+    string name;
+    int roll;
+    void setname(string s)
+    {
+        name = s;
+    }
+
+};
+
 int main()
 {
+    student s1;
+    s1.id = 1;
+    s1.name = "Sidd";
+    s1.roll = 3;
+    s1.setname("Palak");
 
-    vector<int>arr{1,2,3,4,5};
+    
 
-    vector<int>prefix(5,0);
-    prefix[0]=arr[0];
 
-    for(int i=1; i<5; i++)
-    {
-        prefix[i]=prefix[i-1]+arr[i];
-    }
+    cout<<s1.id<<endl<<s1.name<<endl<<s1.roll<<endl;
 
-    for(int i=0; i<5; i++)
-    {
-        cout<<prefix[i]<<" ";
-
-    }
 
 }
+
+
+// SETTER AND GETTER FUNCTION 
+
+
