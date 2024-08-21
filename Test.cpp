@@ -1214,7 +1214,54 @@
 // CONSTRUCTOR
 
 
+#include<bits/stdc++.h>
+using namespace std;
 
+class Customer
+{
+    string name;
+    int balance;
+    int id;
+
+    public:
+    //DEFAULT CONSTRUCTOR -> NAME SAME AS CLASS NAME
+    Customer()
+    {
+        cout<<"Constructor is called"<<endl;
+    }
+
+    //PARAMETERIZED CONSTRUCTOR 
+
+    Customer(string a,int b, int c)
+    {
+        name = a;
+        balance = b;
+        id = c;
+    }
+
+    Customer(string a, int b)    // CONSTRUCTOR OVERLOADING -> SAME NAME WITH DIFFERENT NUMBER OF ARGUMENTS
+    {
+        name = a;
+        balance = b;
+    }
+
+    void display()
+    {
+        cout<<name<<" "<<balance<<" "<<id<<endl;
+    }
+
+};
+
+
+int main()
+{
+    Customer C1;
+    Customer C2("Siddhant",10000,3);
+    Customer C3("Suyash", 1000);
+    C2.display();
+    C3.display();
+
+}
 
 
 
