@@ -1186,31 +1186,30 @@
 
 // DYNAMIC MEMORY ALLOCATION
 
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
+// class Car
+// {
+//     public:
+//     int model;
+//     string name;
+//     int price;
+// };
 
-class Car
-{
-    public:
-    int model;
-    string name;
-    int price;
-};
+// int main()
+// {
+//     Car *c1 = new Car; // creating object dynamically
 
-int main()
-{
-    Car *c1 = new Car; // creating object dynamically
+//     (*c1).model = 1;
+//     (*c1).name = "Tata";
+//     (*c1).price = 100000;
 
-    (*c1).model = 1;
-    (*c1).name = "Tata";
-    (*c1).price = 100000;
-
-    cout<<c1->name<<endl;
-    cout<<c1->model<<endl;
-    cout<<c1->price<<endl;
+//     cout<<c1->name<<endl;
+//     cout<<c1->model<<endl;
+//     cout<<c1->price<<endl;
 
 
-}
+// }
 
 
 
