@@ -1245,6 +1245,9 @@ class Customer
         balance = b;
     }
 
+    // INLINE CUSTOMER
+    
+
     void display()
     {
         cout<<name<<" "<<balance<<" "<<id<<endl;
