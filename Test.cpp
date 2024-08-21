@@ -1066,5 +1066,65 @@
 // }
 
 
+#include<iostream>
+using namespace std;
+
+class Student
+{
+    int roll;
+    string name;
+    string grade;
+
+    public:
+    void setname(string s)
+    {
+        name = s;
+    }
+    void setroll(int n)
+    {
+        roll = n;
+    }
+    void setgrade(string marks)
+    {
+        grade = marks;
+    }
+
+    void getname()
+    {
+        cout<<name<<endl;
+    }
+    void getroll()
+    {
+        cout<<roll<<endl;
+    }
+    void getgrade(int pin)
+    {
+        if(pin == 123)
+        {
+            cout<<grade<<endl;
+        }
+        else
+        {
+            cout<<"Invalid PIN"<<endl;
+        }
+    }
+
+};
+
+
+int main()
+{
+    Student s1;
+    s1.setname("Siddhant");
+    s1.setroll(3);
+    s1.setgrade("A+");
+
+    s1.getname();
+    s1.getroll();
+    s1.getgrade(133);
+}
+
+
+
 
 
