@@ -1066,65 +1066,121 @@
 // }
 
 
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-class Student
-{
-    int roll;
-    string name;
-    string grade;
+// class Student
+// {
+//     int roll;
+//     string name;
+//     string grade;
 
-    public:
-    void setname(string s)
-    {
-        name = s;
-    }
-    void setroll(int n)
-    {
-        roll = n;
-    }
-    void setgrade(string marks)
-    {
-        grade = marks;
-    }
+//     public:
+//     void setname(string s)
+//     {
+//         name = s;
+//     }
+//     void setroll(int n)
+//     {
+//         roll = n;
+//     }
+//     void setgrade(string marks)
+//     {
+//         grade = marks;
+//     }
 
-    void getname()
-    {
-        cout<<name<<endl;
-    }
-    void getroll()
-    {
-        cout<<roll<<endl;
-    }
-    void getgrade(int pin)
-    {
-        if(pin == 123)
-        {
-            cout<<grade<<endl;
-        }
-        else
-        {
-            cout<<"Invalid PIN"<<endl;
-        }
-    }
+//     void getname()
+//     {
+//         cout<<name<<endl;
+//     }
+//     void getroll()
+//     {
+//         cout<<roll<<endl;
+//     }
+//     void getgrade(int pin)
+//     {
+//         if(pin == 123)
+//         {
+//             cout<<grade<<endl;
+//         }
+//         else
+//         {
+//             cout<<"Invalid PIN"<<endl;
+//         }
+//     }
 
-};
-
-
-int main()
-{
-    Student s1;
-    s1.setname("Siddhant");
-    s1.setroll(3);
-    s1.setgrade("A+");
-
-    s1.getname();
-    s1.getroll();
-    s1.getgrade(133);
-}
+// };
 
 
+// int main()
+// {
+//     Student s1;
+//     s1.setname("Siddhant");
+//     s1.setroll(3);
+//     s1.setgrade("A+");
 
+//     s1.getname();
+//     s1.getroll();
+//     s1.getgrade(133);
+// }
+
+
+// PADDING 
+
+// SIZE OF EMPTY CLASS -> 1
+// PADDING GENERALLY IN MULTIPLE , like for char 1, int 4, etc 
+
+// #include<iostream>
+// using namespace std;
+
+// class Student
+// {
+//     char a;
+//     int b;    // a * * * b b b b -> 8 bytes
+// };
+
+
+// int main()
+// {
+//     Student s1;
+//     cout<<sizeof(s1);
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Student
+// {
+//     char a;    // a * * * b b b b c
+//     int b; 
+//     char c;  // should be 9 but its 12, check if ans is divisble by largest one which is 4, if not choose next largest mulltiple.   
+// };
+
+
+// int main()
+// {
+//     Student s1;
+//     cout<<sizeof(s1);
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+
+// class Student
+// {
+//     char a;
+//     char b;
+//     int c;    // a b * * c c c c -> 8 bytes
+// };
+
+
+// int main()
+// {
+//     Student s1;
+//     cout<<sizeof(s1);
+// }
 
 
