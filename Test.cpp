@@ -1286,3 +1286,30 @@
 
 
 
+// CONSTRUCTOR AND DESTRUCTOR
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// class Base
+// {
+//     public:
+//     Base()
+//     {
+//         cout<<"Constructor is called"<<endl;
+//     }
+//     ~Base()
+//     {
+//         cout<<"Destructor is called"<<endl;
+//     }
+
+// };
+
+// int main()
+// {
+//     Base B1;
+
+// }
+
+
+
