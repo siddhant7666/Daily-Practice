@@ -1232,10 +1232,10 @@ class Customer
 
     //PARAMETERIZED CONSTRUCTOR 
 
-    Customer(string a,int b, int c)
+    Customer(string a,int balance, int c)
     {
         name = a;
-        balance = b;
+       this -> balance = balance;
         id = c;
     }
 
@@ -1245,7 +1245,19 @@ class Customer
         balance = b;
     }
 
-    // INLINE CUSTOMER
+    // INLINE CONSTRUCTOR
+
+    inline Customer(string a):name(a){}
+
+    // COPY CONSTRUCTOR
+
+    Customer(Customer &C1)
+    {
+        name = C1.name;
+        balance = C1.balance;
+        id = C1.id;
+
+    }
     
 
     void display()
@@ -1261,8 +1273,14 @@ int main()
     Customer C1;
     Customer C2("Siddhant",10000,3);
     Customer C3("Suyash", 1000);
+    Customer C4("Sparsh");
+    Customer C5(C2); // COPY CONSTRUCTOR
     C2.display();
     C3.display();
+    C4.display();
+    C5.display();
+    Customer C6 = C3;
+    C6.display();
 
 }
 
