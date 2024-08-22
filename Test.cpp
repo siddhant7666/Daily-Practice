@@ -1214,75 +1214,75 @@
 // CONSTRUCTOR
 
 
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
-class Customer
-{
-    string name;
-    int balance;
-    int id;
+// class Customer
+// {
+//     string name;
+//     int balance;
+//     int id;
 
-    public:
-    //DEFAULT CONSTRUCTOR -> NAME SAME AS CLASS NAME
-    Customer()
-    {
-        cout<<"Constructor is called"<<endl;
-    }
+//     public:
+//     //DEFAULT CONSTRUCTOR -> NAME SAME AS CLASS NAME
+//     Customer()
+//     {
+//         cout<<"Constructor is called"<<endl;
+//     }
 
-    //PARAMETERIZED CONSTRUCTOR 
+//     //PARAMETERIZED CONSTRUCTOR 
 
-    Customer(string a,int balance, int c)
-    {
-        name = a;
-       this -> balance = balance;
-        id = c;
-    }
+//     Customer(string a,int balance, int c)
+//     {
+//         name = a;
+//        this -> balance = balance;
+//         id = c;
+//     }
 
-    Customer(string a, int b)    // CONSTRUCTOR OVERLOADING -> SAME NAME WITH DIFFERENT NUMBER OF ARGUMENTS
-    {
-        name = a;
-        balance = b;
-    }
+//     Customer(string a, int b)    // CONSTRUCTOR OVERLOADING -> SAME NAME WITH DIFFERENT NUMBER OF ARGUMENTS
+//     {
+//         name = a;
+//         balance = b;
+//     }
 
-    // INLINE CONSTRUCTOR
+//     // INLINE CONSTRUCTOR
 
-    inline Customer(string a):name(a){}
+//     inline Customer(string a):name(a){}
 
-    // COPY CONSTRUCTOR
+//     // COPY CONSTRUCTOR
 
-    Customer(Customer &C1)
-    {
-        name = C1.name;
-        balance = C1.balance;
-        id = C1.id;
+//     Customer(Customer &C1)
+//     {
+//         name = C1.name;
+//         balance = C1.balance;
+//         id = C1.id;
 
-    }
+//     }
     
 
-    void display()
-    {
-        cout<<name<<" "<<balance<<" "<<id<<endl;
-    }
+//     void display()
+//     {
+//         cout<<name<<" "<<balance<<" "<<id<<endl;
+//     }
 
-};
+// };
 
 
-int main()
-{
-    Customer C1;
-    Customer C2("Siddhant",10000,3);
-    Customer C3("Suyash", 1000);
-    Customer C4("Sparsh");
-    Customer C5(C2); // COPY CONSTRUCTOR
-    C2.display();
-    C3.display();
-    C4.display();
-    C5.display();
-    Customer C6 = C3;
-    C6.display();
+// int main()
+// {
+//     Customer C1;
+//     Customer C2("Siddhant",10000,3);
+//     Customer C3("Suyash", 1000);
+//     Customer C4("Sparsh");
+//     Customer C5(C2); // COPY CONSTRUCTOR
+//     C2.display();
+//     C3.display();
+//     C4.display();
+//     C5.display();
+//     Customer C6 = C3;
+//     C6.display();
 
-}
+// }
 
 
 
