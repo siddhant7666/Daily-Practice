@@ -8,10 +8,14 @@ int main()
     for(int i=0; i<15; i++)
     {
         if(arr[i]==0)
-        zero_count++;
+        {
+            zero_count++;
+        }
         else if(arr[i]==1)
-        one_count++;
-        
+        {
+            one_count++;
+
+        }
     }
 
     cout<<"Number of Zeros are: "<<zero_count<<endl;
