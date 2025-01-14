@@ -7,8 +7,6 @@ void print(int arr[], int n)
     {
         cout<<" "<<arr[i]<<" ";
     }
-    
-
 
 }
 void shift(int arr[], int n)
