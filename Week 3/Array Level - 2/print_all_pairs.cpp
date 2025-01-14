@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 void print_pairs(int arr[], int n)
@@ -7,15 +7,15 @@ void print_pairs(int arr[], int n)
     {
         for(int j=0; j<n; j++)
         {
-            cout<<" "<< arr[i]<<" "<<arr[j]<<endl;
+            cout<<arr[i]<<" "<<arr[j]<<"      ";
         }
     }
-
-
 }
+
 int main()
 {
-    int arr[3]={0,1,2};
+    int arr[3]={1,2,3};
     print_pairs(arr,3);
-
+    return 0;
+ 
 }
