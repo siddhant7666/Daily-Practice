@@ -1,24 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void print_pairs(int arr[], int n)
+void print_triplets(int arr[], int n)
 {
     for(int i=0; i<n; i++)
     {
         for(int j=0; j<n; j++)
         {
-            for(int k=0; k<n; k++)
+            for(int k =0; k<n; k++)
             {
-                cout<<" "<<arr[i]<<" "<<arr[j]<<" "<<arr[k]<<endl;
+                cout<<arr[i]<<" "<<arr[j]<<" "<<arr[k]<<endl;
             }
         }
     }
 
-
 }
+
 int main()
 {
-    int arr[3]={0,1,2};
-    print_pairs(arr,3);
-
+    int arr[5] ={1,2,3,4,5};
+    print_triplets(arr,5);
 }
