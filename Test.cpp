@@ -1315,3 +1315,93 @@
 
 // min and max in an array
 
+// #include<iostream>
+// using namespace std;
+
+// void findminmax(int arr[], int n, int &min, int&max)
+// {
+//     min = max = arr[0];
+//     for(int i=1; i<n; i++)
+//     {
+//         if(arr[i]>max)
+//         {
+//             max = arr[i];
+//         }
+//         if(arr[i]<min)
+//         {
+//             min = arr[i];
+//         }
+//     }
+
+// }
+
+// int main()
+// {
+//     int arr[] = {-2, -5, 0, 0, 10, 15, 27, -13};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     int min, max;
+//     findminmax(arr,n, min, max);
+//     cout<<"Max element is: "<<max<<"  and  "<<"Min element is: "<<min;
+
+// }
+
+// reverse an array
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// void reverse(int arr[], int n)
+// {
+//     int start =0;
+//     int end = n-1;
+//     while(start<end)
+//     {
+//         swap(arr[start],arr[end]); // logic for reversal by using two pointers
+//         start++;   // increasing the start pointer
+//         end--;    // decreasing the end pointer
+//     }
+// }
+
+
+// int main()
+// {
+//     int arr[] = { -2, -1, 0, 12, 16, 13, 15};
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     reverse(arr,n);
+//     // Printing reverse of an array
+//     for(int i=0; i<n; i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+// }
+
+ // Extreme print an array
+
+ #include<bits/stdc++.h>
+ using namespace std;
+
+ void extremePrint(int arr[], int n)
+ {
+    int start =0;
+    int end = n-1;
+    while(start<=end)
+    {
+        if(start==end)
+        {
+            cout<<arr[start];
+            break;
+        }
+        cout<<arr[start]<<" "<<arr[end]<<" ";
+        start++;
+        end--;
+    }
+ }
+
+ int main()
+ {
+    int arr[] = {12, 13,17,1, 2, 34,-2, 0, 2 };
+    int n = sizeof(arr)/sizeof(arr[0]);
+    extremePrint(arr,n);
+
+ }
+ 
