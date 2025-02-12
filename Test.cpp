@@ -1377,31 +1377,31 @@
 
  // Extreme print an array
 
- #include<bits/stdc++.h>
- using namespace std;
+//  #include<bits/stdc++.h>
+//  using namespace std;
 
- void extremePrint(int arr[], int n)
- {
-    int start =0;
-    int end = n-1;
-    while(start<=end)
-    {
-        if(start==end)
-        {
-            cout<<arr[start];
-            break;
-        }
-        cout<<arr[start]<<" "<<arr[end]<<" ";
-        start++;
-        end--;
-    }
- }
+//  void extremePrint(int arr[], int n)
+//  {
+//     int start =0;
+//     int end = n-1;
+//     while(start<=end)
+//     {
+//         if(start==end)
+//         {
+//             cout<<arr[start];
+//             break;
+//         }
+//         cout<<arr[start]<<" "<<arr[end]<<" ";
+//         start++;
+//         end--;
+//     }
+//  }
 
- int main()
- {
-    int arr[] = {12, 13,17,1, 2, 34,-2, 0, 2 };
-    int n = sizeof(arr)/sizeof(arr[0]);
-    extremePrint(arr,n);
+//  int main()
+//  {
+//     int arr[] = {12, 13,17,1, 2, 34,-2, 0, 2 };
+//     int n = sizeof(arr)/sizeof(arr[0]);
+//     extremePrint(arr,n);
 
- }
+//  }
  
