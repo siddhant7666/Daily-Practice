@@ -1407,3 +1407,24 @@
  
 
 // Binary search algorithm
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int binarysearch(int arr[], int n, int target)
+{
+    
+}
+
+int main()
+{
+    int arr[] = {12,1,-2,3,15,6,19,2,4,5,7,-9,-4,13};
+    // int n = arr.size();
+    // why can't I use .size in array, -> because size is a member function of vector not raw array, in array i should use this instead :
+
+    int n = sizeof(arr)/sizeof(arr[0]);
+    int target = -9;
+    int result = binarysearch(arr, n, target);
+
+
+}
