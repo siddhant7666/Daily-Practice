@@ -1415,10 +1415,10 @@ int binarysearch(int arr[], int n, int target)
 {
     int start = 0;
     int end = n-1;
-    int mid = start + (end-start)/2;
+   
     while(start<=end)
     {
-        mid = start + (end-start)/2;
+        int mid = start + (end-start)/2;
         if(arr[mid]==target)
         {
             return mid;
@@ -1439,12 +1439,14 @@ int binarysearch(int arr[], int n, int target)
 
 int main()
 {
-    int arr[] = {12,1,-2,3,15,6,19,2,4,5,7,-9,-4,13};
+    int arr[] = {-9, -4, -2, 1, 2, 3, 4, 5, 6, 7, 12, 13, 15, 19};
+    
     // int n = arr.size();
     // why can't I use .size in array, -> because size is a member function of vector not raw array, in array i should use this instead :
 
     int n = sizeof(arr)/sizeof(arr[0]);
-    int target = -9;
+    
+    int target = 17;
     int result = binarysearch(arr, n, target);
     if(result==-1)
     {
