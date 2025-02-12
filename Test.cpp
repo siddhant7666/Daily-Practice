@@ -1405,3 +1405,5 @@
 
 //  }
  
+
+// Binary search algorithm
