@@ -1408,54 +1408,54 @@
 
 // Binary search algorithm
 
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
-int binarysearch(int arr[], int n, int target)
-{
-    int start = 0;
-    int end = n-1;
+// int binarysearch(int arr[], int n, int target)
+// {
+//     int start = 0;
+//     int end = n-1;
    
-    while(start<=end)
-    {
-        int mid = start + (end-start)/2;
-        if(arr[mid]==target)
-        {
-            return mid;
+//     while(start<=end)
+//     {
+//         int mid = start + (end-start)/2;
+//         if(arr[mid]==target)
+//         {
+//             return mid;
 
-        }
-        else if(arr[mid]>target)
-        {
-            end = mid-1;
-        }
-        else
-        {
-            start = mid+1;
-        }
+//         }
+//         else if(arr[mid]>target)
+//         {
+//             end = mid-1;
+//         }
+//         else
+//         {
+//             start = mid+1;
+//         }
         
-    }
-    return -1;
-}
+//     }
+//     return -1;
+// }
 
-int main()
-{
-    int arr[] = {-9, -4, -2, 1, 2, 3, 4, 5, 6, 7, 12, 13, 15, 19};
+// int main()
+// {
+//     int arr[] = {-9, -4, -2, 1, 2, 3, 4, 5, 6, 7, 12, 13, 15, 19};
     
-    // int n = arr.size();
-    // why can't I use .size in array, -> because size is a member function of vector not raw array, in array i should use this instead :
+//     // int n = arr.size();
+//     // why can't I use .size in array, -> because size is a member function of vector not raw array, in array i should use this instead :
 
-    int n = sizeof(arr)/sizeof(arr[0]);
+//     int n = sizeof(arr)/sizeof(arr[0]);
     
-    int target = 17;
-    int result = binarysearch(arr, n, target);
-    if(result==-1)
-    {
-        cout<<"Element not found!!!";
-    }
-    else
-    {
-        cout<<"Element found at index: "<<result;
-    }
+//     int target = 17;
+//     int result = binarysearch(arr, n, target);
+//     if(result==-1)
+//     {
+//         cout<<"Element not found!!!";
+//     }
+//     else
+//     {
+//         cout<<"Element found at index: "<<result;
+//     }
 
 
-}
+// }
