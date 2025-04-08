@@ -1474,6 +1474,11 @@ class Student
     
 };
 
+void print(Student s)
+{
+    cout<<s.name<<" "<<s.roll<<" "<<s.standard<<endl;
+}
+
 int main()
 {
     Student s1;
@@ -1481,6 +1486,9 @@ int main()
     s1.roll= 12;
     s1.standard=3;
 
-    cout<<s1.name<<" "<<s1.roll<<" "<<s1.standard<<endl;
+    //cout<<s1.name<<" "<<s1.roll<<" "<<s1.standard<<endl;
+    print(s1);
+
+    
 
 }
