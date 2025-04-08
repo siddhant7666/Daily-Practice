@@ -1478,6 +1478,12 @@ class Student
     {
 
     }
+    Student(string n, int r, int s) // Parameterized Constructor
+    {
+        name = n;
+        roll = r;
+        standard = s;
+    }
     
 };
 
@@ -1490,13 +1496,16 @@ void print(Student s)
 
 int main()
 {
-    Student s1;
-    s1.name = "Lallulal";
-    s1.roll= 12;
-    s1.standard=3;
+    Student s1("Ram",12,3);
+    Student s2;
+
+    s2.name = "Lallulal";
+    s2.roll= 12;
+    s2.standard=3;
 
     //cout<<s1.name<<" "<<s1.roll<<" "<<s1.standard<<endl;
     print(s1);
+    print(s2);
 
     
 
