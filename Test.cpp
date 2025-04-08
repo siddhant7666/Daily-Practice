@@ -1465,6 +1465,8 @@
 #include<iostream>
 using namespace std;
 
+
+
 class Student
 {
     public:
@@ -1478,6 +1480,8 @@ void print(Student s)
 {
     cout<<s.name<<" "<<s.roll<<" "<<s.standard<<endl;
 }
+
+
 
 int main()
 {
