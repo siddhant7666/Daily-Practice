@@ -1473,6 +1473,11 @@ class Student
     string name;
     int roll;
     int standard;
+
+    Student() //Default Constructor
+    {
+
+    }
     
 };
 
