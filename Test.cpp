@@ -1462,3 +1462,25 @@
 
 // OOPS 
 
+#include<iostream>
+using namespace std;
+
+class Student
+{
+    public:
+    string name;
+    int roll;
+    int standard;
+    
+};
+
+int main()
+{
+    Student s1;
+    s1.name = "Lallulal";
+    s1.roll= 12;
+    s1.standard=3;
+
+    cout<<s1.name<<" "<<s1.roll<<" "<<s1.standard<<endl;
+
+}
