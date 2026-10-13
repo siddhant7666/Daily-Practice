@@ -1506,7 +1506,6 @@ int main()
     //cout<<s1.name<<" "<<s1.roll<<" "<<s1.standard<<endl;
     print(s1);
     print(s2);
-
-    
-
+    // comment
+    // comment 2
 }
